@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import pic_1 from "./assets/pic-1.jpg";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <div id="hero"><Hero imageSrc={pic_1} /></div>
     </div>
   );
 }
