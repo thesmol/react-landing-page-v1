@@ -1,0 +1,111 @@
+.formPage {
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+}
+
+.formPage--zoom {
+    opacity: 0.75;
+    transform: scale(100%);
+    transition: 2s;
+}
+
+.emailForm {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 60%;
+    height: 40vh;
+}
+
+.emailForm__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+    height: 100%;
+}
+
+.emailForm__right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%
+}
+
+.emailForm__contact {
+    border: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    height: 30%;
+}
+
+.emailForm__button {
+    border: 0;
+    transition: 250ms;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(151, 151, 151);
+}
+
+.emailForm__button:hover {
+    background-color: rgb(65, 65, 65);
+    transition: 250ms;
+}
+
+.emailForm__text {
+    border: 0;
+    resize: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    height: 100%;
+}
+
+.emailForm__title {
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .emailForm {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 20px;
+        height: 50vh;
+    }
+
+    .emailForm__left {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .emailForm__right {
+        width: 100%;
+    }
+
+    .emailForm__text {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .emailForm__contact {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .emailForm__button {
+        width: 100%;
+    }
+
+}
