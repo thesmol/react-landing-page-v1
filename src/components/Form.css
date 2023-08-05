@@ -5,13 +5,14 @@
 }
 
 .formPage--zoom {
-    opacity: 0.75;
+    opacity: 1;
     transform: scale(100%);
     transition: 2s;
 }
 
 .emailForm {
     background-color: black;
+    opacity: 0.75;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +75,7 @@
 
 .emailForm__title {
     text-align: center;
+    color: black;
 }
 
 @media screen and (max-width:800px) {
